@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Formulir Pendidikan Perpustakaan UNS
+        </title>
+    </head>
+    <body bgcolor="#34c3eb" text="white">
+        <br><br>
+        <form method="POST">
+            <table bgcolor="#0a7fad" width=40% align=center cellpadding=6 cellspacing=2>
+                <tr>
+                    <td colspan="4" align=center><b><h2>Form Pendaftaran Perpustakaan</h2></b></td>
+                </tr>
+                <tr>
+                    <td width=5%></td>
+                    <td width=40%><label>NIM / NIP</label></td>
+                    <td width=10%></td>
+                    <td width=50%><input type="text" name="nimm" placeholder="NIM / NIP"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td align=""><label>Nama</label></td>
+                    <td width=10%></td>
+                    
+                    <td><input type="text" name="name" placeholder="Nama lengkap"></td>
+                    
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><label>Program</label></td>
+                    <td width=10%></td>
+                    
+                    <td><select name="prog">
+                        <option value="">--Pilih Program--</option>
+                        <option value="D3">D3</option>
+                        <option value="D4">D4</option>
+                        <option value="S1 Reguler">S1 Reguler</option>
+                        <option value="S1 Ekstensi">S1 Ekstensi</option>
+                        <option value="S2">S2</option>
+                        <option value="S3">S3</option>
+                        <option value="Dosen">Dosen</option>
+                        <option value="Karyawan">Karyawan</option>
+                    </select>
+                </td>
+                
+            </tr>
+            <tr>
+                <td></td>
+                <td><label>Fakultas</label></td>
+                <td width=10%></td>
+                
+                <td><select name="fakl">
+                    <option value="">--Pilih Fakultas--</option>
+                    <option value="FISIP">FISIP</option>
+                    <option value="FEB">FEB</option>
+                    <option value="FIB">FIB</option>
+                    <option value="FMIPA">FMIPA</option>
+                    <option value="FP">FP</option>
+                    <option value="FKIP">FKIP</option>
+                    <option value="FK">FK</option>
+                    <option value="FT">FT</option>
+                    <option value="FH">FH</option>
+                    <option value="FSRD">FSRD</option>
+                    <option value="FKOR">FKOR</option>
+                    <option value="PASC">Pascasarjana</option>
+                    <option value="DOSK">Dosen</option>
+                </select>
+            </td>
+            
+        </tr>
+        <tr>
+            <td></td>
+            <td><label>Program Studi</label></td>
+            
+            <td width=10%></td>
+            <td><input type="text" name="prod" placeholder="Program studi"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><label>Alamat Rumah</label></td>
+            
+            <td></td>
+            <td><textarea type="text" name="alm1" placeholder="Alamat rumah"></textarea></td>
+        </tr>
+        <tr></tr>
+        <tr>
+            <td></td>
+            <td><label>Alamat Kost</label></td>
+            
+            <td></td>
+            <td><textarea type="text" name="alm2" placeholder="Alamat kost"></textarea></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><label>Nomor Telepon</label></td>
+            
+            <td></td>
+            <td><input type="text" name="tlpn" placeholder="Nomor telepon"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><label>Tempat & Tanggal Lahir</label></td>
+            <td></td>
+            
+            <td><input size="3" type="text" name="tmpt" placeholder="Tempat">
+                <input type="date" name="tgll"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><label>Nama Ibu</label></td>
+            <td></td>
+            
+            <td><input type="text" name="ortu" placeholder="Nama Ibu"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><label>Pas Foto Formal</label></td>
+            <td></td>
+                
+            <td><input type="file" name="foto"></td>
+        </tr>
+        <tr>
+            <td>
+            <br>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Apakah data yang diisi sudah benar?</td>
+            <td>:</td>
+            <td><input type="checkbox" name="check" placeholder="Centang"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td align=center><input type="submit" name="submit" value="Daftar"></td>
+        </tr>
+        <tr>
+            <td></td>
+        </tr>
+        </table>
+        
+    </form>
+</body>
+</html>

@@ -1,9 +1,11 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 
 .list{
     width: 70%;
     margin: 0 auto;
 }
-
 
 
 .list:after{
@@ -86,20 +88,13 @@ header ul li a:hover{
     }
 }
 
-
-.content{
-    width: 150px;
+/*
+.backg {
+    background-color: rgb(0, 97, 112);
+    padding: 270px;
+    text-align: center;
 }
-
-.box{
-    color: #3333ff;
-    overflow: none;
-    animation: motion1 1s ease-in 0s 1 normal forwards;
-    resize: both;
-    width: 200px;
-    height: 200px;
-    box-shadow: 0px 0px 4px 0px #000;
-}
+*/
 
 footer {
     padding: 20px 0;
@@ -108,7 +103,7 @@ footer {
     color: white;
     text-align: center;
 }
-
+ /* UNTUK SLIDER */
 @keyframes motion1 {
     0% {
         opacity: 0;
@@ -120,6 +115,4 @@ footer {
         transform: translateY(0);
     }
 }
-
-/* FORM KONTAK
 

@@ -3,4 +3,4 @@
 Hola, saya ferdyan dan repository ini ditujukan untuk matkul Desain Web
 
 Mau tahu lebih banyak info menarik ??? 
-kunjungi  >>>>>> ferdyan.id <<<<<<<
+kunjungi https://ferdyan.di

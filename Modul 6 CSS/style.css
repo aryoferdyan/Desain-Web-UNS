@@ -1,17 +1,21 @@
 
+body{
+    background-color: black;
+}
 
 #wrap {
+    font-family: sans-serif;
     width: 1000px;
     height: 800px;
     margin: 0 auto;
-    background-color: white;
+    background-color: black;
 }
 
 #header{
-    background-image: url(images/header.jpg);
-    border-bottom-left-radius: 50px;
+    background-image: url(images/header.png); 
+    border-top-right-radius: 10px;
     width: 730px;
-    height: 300px;
+    height: 200px;
     margin: auto;
     box-shadow: 0 0 10px rgba(0,0,0,.25);
     float: right;
@@ -24,7 +28,7 @@
 }
 
 #judul a{
-    color: white;
+    color: black;
     text-decoration: none;
 }
 
@@ -41,7 +45,7 @@
 
 #menu ul{
     float: right;
-    background: darkblue;
+    background: #ffdf2b;
     padding: 0 0px;
     position: relative;
     box-shadow: 0 0 10px rgba(0,0,0,.25);
@@ -60,18 +64,19 @@
 }
 
 #menu ul li:hover {
-    background: blue;
+    background: #ffdf2f;
 }
 
 #menu ul li a{
     display: block;
-    color: white;
+    color: black;
     padding: 10px 20px;
+    font-weight: 700;
     text-decoration: none;
 }
 
 #menu ul li:hover a{
-    color: white;
+    color: black;
 }
 
 #menu ul li:hover > ul {
@@ -79,7 +84,7 @@
 }
 
 #menu ul ul {
-    background: darkblue;
+    background: grey;
     position: absolute;
     padding: 0;
     top: 100%;
@@ -94,12 +99,14 @@
 
 #menu ul ul li a{
     padding: 10px 30px;
-    color: white;
+    color: black;
+    font-weight: bold;
 }
 
 #menu ul ul li a:hover{
-    background: blue;
+    background: rgba(0,0,0,.25);
     color: white;
+    font-weight: bolder;
 }
 
 #menu ul ul ul{
@@ -109,8 +116,8 @@
 }
 
 #kiri {
-    border-top-left-radius: 50px;
-    background-color: white;
+    border-top-left-radius: 10px;
+    background-color: #e2e0df;
     width: 250px;
     height: auto;
     margin: 0 0 20px;
@@ -136,9 +143,9 @@
 #kiri h2{
     margin: 0px 0 0px 0;
     padding: 5px 12px;
-    color: white;
+    color: #ffdf2b;
     font-size: 20px;
-    background: darkblue;
+    background: black;
 }
 
 #kiri a{
@@ -150,12 +157,12 @@
 }
 
 #kiri a:hover{
-    background: blue;
+    background: gray;
     color: white;
 }
 
 #konten {
-    background-color: white;
+    background-color: #e2e0df;
     width: 690px;
     height: auto;
     margin: 0 0 20px;
@@ -168,7 +175,7 @@
     text-decoration: none;
     font-size: 30px;
     font-family: Arial;
-    color: blue;
+    color: black ;
 }
 
 .posttitle a{
@@ -181,30 +188,29 @@
 }
 
 b a {
-    color: blue;
+    color: gray;
     text-decoration: none;
 }
 
 img{
-    width: 20%;
-    height: 20%;
-    border-radius: 20px;
+    width: 210px;
 }
 
 #logo {
     width: 100px;
     height: 100px;
+    border-radius: 20px;
 }
 
 #footer{
-    background-color: darkblue;
+    background-color: #ffdf2b;
     padding: 20px 0 0 0 ;
     width: 1000px;
     height: 90px;
     clear: both;
     margin: 20 0;
     text-align: center;
-    color: white;
-    border-top-left-radius: 50px;
-    border-bottom-right-radius: 50px;
+    color: black;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }

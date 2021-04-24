@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@500&display=swap');
+
+
+body {
+    margin: 0;
+    scroll-behavior: smooth;
+    height: 3000px;
+    background-color: #f2f2f2;
+}
+  
+#navbar {
+    background-color: #333;
+    position: fixed;
+    top: -100px;
+    width: 100%;
+    transition: top 0.5s;
+}
+
+#navbar a {
+    float: center;
+    font-family: spartan;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bolder;
+}
+
+#home {
+    height: 1000px; 
+    background-color: #333;
+    margin-top: -1000px;
+}
+
+#home button{
+    margin-top: 20%;
+    float: center;
+}

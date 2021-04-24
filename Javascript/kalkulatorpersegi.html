@@ -1,0 +1,31 @@
+<html>
+    <head><title>Kalkulator</title>
+    </head>
+
+    <body>
+        <form name="form">
+            <h1>Masukkan angka</h1>
+            <pre>
+                panjang : <input type="text" name="panjang">
+                lebar   : <input type="text" name="lebar">
+            </pre> 
+            <input type="button" value="hitung" onclick="luas()">
+            <input type="reset" value="reset">
+        </form>
+
+        <script>
+            function luas(){
+                var panjang =parseFloat(document.form.panjang.value);
+                var lebar=parseFloat(document.form.lebar.value);
+
+                if (isNaN(panjang))
+                panjang = 0.0;
+                if (isNaN(lebar))
+                lebar = 0.0;
+
+                var luas = panjang *lebar;
+                alert("Hasilnya "+luas)
+            }
+        </script>
+    </body>
+</html>

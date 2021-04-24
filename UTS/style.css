@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@500&display=swap');
+
+body {
+    font-family: 'spartan';
+    background: scroll;
+    font-weight: bold;
+}
+
+
+
+
+nav {
+    width: 98%;
+    display: inline-block;
+    color: #343232;
+    background-color: #ffdf2b;
+    position: fixed;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+nav .nav-title {
+    float: left;
+    font-size: larger;
+    font-weight: bolder;
+    margin-left: 2%;
+}
+
+nav .nav-right {
+    float: right;
+}
+
+nav ul{
+	float: right;
+    margin: 0;
+    padding: 0;
+	list-style: none;
+	width: 460px;
+}
+
+nav ul:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li.active {
+    border-bottom:1px solid #343232;
+}
+
+nav ul li.active a {
+    color:red;
+}
+
+nav ul li:hover {
+    border-bottom:1px solid red;
+}
+
+nav .nav-title a, nav ul li a {
+    display: block;
+    padding: 20px 20px 20px 20px;
+    text-decoration: none;
+}
+
+nav ul li:hover a {
+    color: red;
+}
+
+nav a:link    {
+    color:#343232;
+}
+
+nav a:visited {
+    color:#343232;
+}
+
+nav a:hover   {
+    color:#343232;
+}
+
+nav a:active  {
+    color:#343232;
+} 
+
+.home {
+    width: 99%;
+    height: 100%;
+    color: #343232;
+    margin-top: 5%;
+    padding: 10px 0 15px 0;
+    display: inline-block;
+}
+
+.home img{
+    display: inline-block;
+    width: 60%;
+}
+
+.home tls{
+    width: 40%;
+    margin-top: 25px;
+    text-align: center;
+    float: left;
+    font-size: 30px;
+}
+
+.home h2{
+    font-weight: bold;
+}
+
+.home h1{
+    font-weight: bolder;
+}
+
+.content1{
+    width: 99%;
+    height: 430px;
+    display: inline-block;
+    color: #343232;
+    margin-top: 2%;
+    padding: 10px 0 25px 0;
+}
+
+.content1 h1{
+    font-weight: 500;
+}
+
+.content1 col1, .content1 col2, .content1 col3 {
+    width: 30%;
+    height: 430px;
+    display: inline-block;
+    margin-top: 5px;
+    margin-left: 2%;
+    background-color: white;
+    text-align: center;
+    border: 2px;
+    margin-top: 2%;
+    font-size: 30px;
+}
+
+.content1 h1{
+    font-weight: bolder;
+}
+
+.skill {
+    width: 99%;
+    height: 100%;
+    color: #343232;
+    margin-top: 5%;
+    align-self: center;
+    align-content: center;
+    text-align: center;
+    padding: 10px 0 15px 0;
+    display: inline-block;
+}
+
+.skill h1{
+    font-weight: bolder;
+    border-bottom: 10%;
+    border-top: 10%;
+}
+
+footer {
+	padding: 20px 0;
+	background-color: #ffdf2b;
+	text-align: center;
+	color: #343232;
+}
+
+unsupport{
+    visibility: hidden;
+}
+
+@media only screen and (max-width: 375px){
+    wrap{
+        visibility: hidden;
+    }
+
+    unsupport{
+        visibility: visible;
+    }
+}

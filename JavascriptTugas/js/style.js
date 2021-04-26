@@ -9,16 +9,18 @@ function scroll() {
   else {
     document.getElementById("navbar").style.top = "-50px";
   }
-
-  
 }
 
 
-// function hide() {
-//   var x = document.getElementById("home");
-//   if (x.style.visibility === "visible") {
-//     x.style.visibility = "hidden";
-//   } else {
-//     x.style.visibility = "visible";
-//   }
-// }
+function a1() {
+  var y = document.getElementById("a1");
+  y.style.visibility = "visible";
+}
+
+function Hasil() {
+  var berat = document.formBMI.berat.value;
+  var tinggi = document.formBMI.tinggi.value;
+  var bagi  = tinggi*tinggi/10000;
+  var bmi = berat/bagi;
+  document.formBMI.meaning.value  = bmi;
+}

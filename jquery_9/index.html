@@ -1,0 +1,280 @@
+<html>
+    <head>
+        <title>Jasa Joki Tugas Online</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="stylesheet.css">
+        <link rel="stylesheet" href="assets/js/jquery-ui.css">
+        <link rel="stylesheet" href="assets/fontawesome/css/all.css">
+        <script src="js.js"></script>        
+        <script src="assets/jquery-3.6.0.min.js"></script>
+        <script src="assets/js/jquery-ui.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $("#home").click(function(){
+                    $(".home").show("1s");
+                    $(".picture").hide("0.5s");
+                    $(".contact").hide("0.5s");
+                });
+            });
+            $(document).ready(function(){
+                $("#picture").click(function(){
+                    $(".home").hide("0.5s");
+                    $(".picture").show("1s");
+                    $(".contact").hide("0.5s");
+                });
+            });
+            $(document).ready(function(){
+                $("#contact").click(function(){
+                    $(".home").hide("0.5s");
+                    $(".picture").hide("0.5s");
+                    $(".contact").show("1s");
+                });
+            });
+            $(document).ready(function(){
+                $("#1").click(function(){
+                    var url = $("#1 img").attr("src");
+                    $(".popUp").html("<img src='"+url+"'>")
+                    $(".popUp img").css("width","100%")
+                    $(".popUp").dialog({
+                        show:"blind",
+                        hide:"blind",
+                        width:"auto",
+                        height:"auto"
+                    });
+                });
+            });
+            $(document).ready(function(){
+                $("#2").click(function(){
+                    var url = $("#2 img").attr("src");
+                    $(".popUp").html("<img src='"+url+"'>")
+                    $(".popUp img").css("width","100%")
+                    $(".popUp").dialog({
+                        show:"blind",
+                        hide:"blind",
+                        width:"auto",
+                        height:"auto"
+                    });
+                });
+            });
+            $(document).ready(function(){
+                $("#3").click(function(){
+                    var url = $("#3 img").attr("src");
+                    $(".popUp").html("<img src='"+url+"'>")
+                    $(".popUp img").css("width","100%")
+                    $(".popUp").dialog({
+                        show:"blind",
+                        hide:"blind",
+                        width:"auto",
+                        height:"auto"
+                    });
+                });
+            });
+            $(document).ready(function(){
+                $("#4").click(function(){
+                    var url = $("#4 img").attr("src");
+                    $(".popUp").html("<img src='"+url+"'>")
+                    $(".popUp img").css("width","100%")
+                    $(".popUp").dialog({
+                        show:"blind",
+                        hide:"blind",
+                        width:"auto",
+                        height:"auto"
+                    });
+                });
+            });
+            $(document).ready(function(){
+                $("#5").click(function(){
+                    var url = $("#5 img").attr("src");
+                    $(".popUp").html("<img src='"+url+"'>")
+                    $(".popUp img").css("width","100%")
+                    $(".popUp").dialog({
+                        show:"blind",
+                        hide:"blind",
+                        width:"auto",
+                        height:"auto"
+                    });
+                });
+            });
+            $(document).ready(function(){
+                $("#6").click(function(){
+                    var url = $("#6 img").attr("src");
+                    $(".popUp").html("<img src='"+url+"'>")
+                    $(".popUp img").css("width","100%")
+                    $(".popUp").dialog({
+                        show:"blind",
+                        hide:"blind",
+                        width:"auto",
+                        height:"auto"
+                    });
+                });
+            });
+            $(document).ready(function(){
+                $("#7").click(function(){
+                    var url = $("#7 img").attr("src");
+                    $(".popUp").html("<img src='"+url+"'>")
+                    $(".popUp img").css("width","100%")
+                    $(".popUp").dialog({
+                        show:"blind",
+                        hide:"blind",
+                        width:"auto",
+                        height:"auto"
+                    });
+                });
+            });
+            $(document).ready(function(){
+                $("#8").click(function(){
+                    var url = $("#8 img").attr("src");
+                    $(".popUp").html("<img src='"+url+"'>")
+                    $(".popUp img").css("width","100%")
+                    $(".popUp").dialog({
+                        show:"blind",
+                        hide:"blind",
+                        width:"auto",
+                        height:"auto"
+                    });
+                });
+            });
+            $(document).ready(function(){
+                $("input[type=text]").focus(function(){
+                    $(this).css("background-color","lightblue")
+                });
+                $("input[type=text]").blur(function(){
+                    $(this).css("background-color","white")
+                });
+            });
+            $(document).ready(function(){
+                $("#subject").focus(function(){
+                    $(this).css("background-color","lightblue")
+                });
+                $("#subject").blur(function(){
+                    $(this).css("background-color","white")
+                });
+            });
+            
+            //whatsapp api
+            function sendwa(){
+                nma = document.getElementById("name").value;
+                num = 6285800700853;
+                eml = document.getElementById("email").value;
+                psn = document.getElementById("subject").value;
+
+                api = window.open(`https://wa.me/${num}?text=Halo+kenalkan+saya,%0Anama+:+${nma}%0Aemail+:+${eml}%0Akeperluan+tugas+:+${psn}%0AMohon+info+selanjutnya,+terimakasih`, '_blank');
+            }
+
+         //   reset button
+            // function reset(){
+            //     document.getElementById("name").reset;
+            //     document.getElementById("email").reset;
+            //     document.getElementById("subject").reset;
+            // }
+
+        </script>
+    </head>
+    <body>
+        <div class="overlay"></div>
+        <section class="bg">
+            <img src="assets/img/bg.jpg" alt="gambar tema">
+        </section>
+
+        <section class="front">
+
+            <div class="menu-nav">
+                <nav>
+                    <ul>
+                        <li id="home"><a href="#home"><div class="image-icon"><i class="fas fa-home"></i></div></a></li>
+                        <li id="picture"><a href="#picture"><div class="image-icon"><i class="fas fa-images logo"></i></div></a></li>
+                        <li id="contact"><a href="#contact"><div class="image-icon"><i class="fas fa-id-card logo"></i></div></a></li>
+                    </ul>
+                </nav>
+            </div> <!--menu-nav-->
+
+        <ul class="home" id="home">
+            <li class="selected">
+                <div class="heading">
+                    <h1>Selamat Datang</h1>
+                    <span>JASA JOKI TUGAS<br>CUKUP KAMI SAJA YANG PUSING, ANDA JANGAN</span>
+                </div>
+                <div class="konten">
+                    <div class="top"></div>
+                    <div class="isi">
+                        <p>Anda ingin bersantai tetapi tugas anda banyak? Anda ingin bermain game tetapi tidak ada waktu karena memiliki
+                            banyak tugas? Atau anda terpaksa tidak ikut jalan-jalan bersama keluarga karena tugas yang menumpuk?
+                        </p>
+                        <p>Mau mengerjakan, tetapi bingung mau mengerjakan yang mana dulu.</p>
+                        <p>Tenang saja! Kami paham apa yang anda rasakan, jangan biarkan diri anda ketinggalan berbagai momen hanya karena
+                            tugas anda. Kami JASAJOKITUGAS-ONLINE bersedia mengerjakan tugas anda.
+                        </p>
+                        <br>
+                        <p><b><h3>Kami Saja Yang Pusing, Anda Jangan !!!</h3></b></p>
+                        <br>
+                    </div>
+                </div>
+            </li> <!--selected-->
+        </ul> <!--Home-->           
+
+        <ul class="picture" id="picture">
+            <li class="selected">
+                <div class="heading">
+                    <h1>KATALOG</h1>
+                    <span>JASA JOKI TUGAS<br>CUKUP KAMI SAJA YANG PUSING, ANDA JANGAN</span>
+                </div>
+                <div class="konten">
+                    <div class="top"></div>
+                    <div class="wrapper">
+                        <div class="gambar" id="1"><a href="#"><img src="assets/img/makalah_1.PNG" alt="gambar"></a></div>
+                        <div class="gambar" id="2"><a href="#"><img src="assets/img/makalah_2.PNG" alt="gambar"></a></div>
+                        <div class="gambar" id="3"><a href="#"><img src="assets/img/tugas.jpg" alt="gambar"></a></div>
+                        <div class="gambar" id="4"><a href="#"><img src="assets/img/tugas_1.PNG" alt="gambar"></a></div>
+                        <div class="gambar" id="5"><a href="#"><img src="assets/img/tugas_2.PNG" alt="gambar"></a></div>
+                        <div class="gambar" id="6"><a href="#"><img src="assets/img/tugas_3.PNG" alt="gambar"></a></div>
+                        <div class="gambar" id="7"><a href="#"><img src="assets/img/tugas_4.PNG" alt="gambar"></a></div>
+                        <div class="gambar" id="8"><a href="#"><img src="assets/img/tugas_5.PNG" alt="gambar"></a></div>
+                    </div>
+                    <div class="popUp"></div>
+                </div>
+            </li> <!--selected-->
+        </ul> <!--picture-->          
+
+        <ul class="contact" id="contact">
+            <li class="selected">
+                <div class="heading">
+                    <h1>HUBUNGI KAMI</h1>
+                    <span>JASA JOKI TUGAS<br>CUKUP KAMI SAJA YANG PUSING, ANDA JANGAN</span>
+                </div>
+                <div class="konten">
+                    <div class="top"></div>
+                    <div class="isi">
+                        <div class="row">
+                            <div class="column">
+                                <form class="form">
+                                    <label>Nama</label>
+                                    <input type="text" id="name" name="name" placeholder="Nama">
+                                    <label>Email</label>
+                                    <input type="text" id="email" name="email" placeholder="xxx@gmail.com">
+                                    <label>Subject</label>
+                                    <textarea id="subject" name="subject" placeholder="Jelaskan singkat tentang tugas anda ..." style="height:200px"></textarea>
+                                    <input type="submit" class="submit" value="Send" onclick="sendwa()">
+                                    <input type="reset" class="submit" value="Reset">
+                                </form>
+                            </div>
+                            <div class="column" style="margin-top: 20%;">
+                                  <h2>Temukan kami di</h2>
+                                  <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+                                  <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+                                  <a href="https://facebook.com"><i class="fab fa-facebook"></i></a>
+                                  <a href="https://wa.me/628137183088"><i class="fab fa-whatsapp"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li> <!--selected-->
+        </ul> <!--contact-->          
+
+        <div class="footer">
+            <p>Copyright &copy; 2021 JASAJOKITUGAS-ONLINE</p>
+        </div>
+        </section> <!--front-->
+
+        
+    </body>
+</html>
